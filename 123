@@ -1,0 +1,77 @@
+Задание 2:
+using System;
+using System.Runtime.Serialization.Formatters;
+using static System.Console;
+public class Program
+{
+    public static void Main()
+    {
+        int a = 10000;
+        int c = 0;
+        int m = 0;
+        string P = ReadLine();
+        int.TryParse(P, out int n);
+        if (n < 25 && n > 0)
+        {
+            while (a < 11000)
+            {
+                c = 1000 * n / 100;
+                a += c;
+                m++;
+            }
+
+        }
+        Console.WriteLine(m);
+    }
+}
+Задание 3;
+using System;
+using System.Runtime.Serialization.Formatters;
+using static System.Console;
+public class Program
+{
+    public static void Main()
+    {    
+
+        string a = ReadLine();
+        int.TryParse(a, out int n);
+        string b = ReadLine();
+        int.TryParse(b, out int j);
+        if (n < j)
+        {
+            for (int i = n; i <= j; i++)
+            {
+                
+                
+                for (int k = 1; k < i; k++)
+                {
+                    Write(i+" ");
+                }
+
+               WriteLine();
+            }
+        }
+    }
+}
+задание 4.
+using System;
+using System.Runtime.Serialization.Formatters;
+using static System.Console;
+public class Program
+{
+    public static void Main()
+    {
+
+        string a;
+        a = Console.ReadLine();
+        char[] sReverse = a.ToCharArray();
+        Array.Reverse(sReverse);
+        a = new string(sReverse);
+        Console.WriteLine(a);
+        Console.ReadLine();
+
+
+
+
+    }
+}
